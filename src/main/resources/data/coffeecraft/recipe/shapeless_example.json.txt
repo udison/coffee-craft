@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		{ "item": "minecraft:hopper" },
+		{ "item": "minecraft:furnace" }
+	],
+	"result": {
+		"count": 1,
+		"id": "coffeecraft:roaster"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"H": { "item": "minecraft:hopper" },
+		"F": { "item": "minecraft:furnace" },
+		"I": { "item": "minecraft:iron_ingot" },
+		"R": { "item": "minecraft:redstone" }
+	},
+	"pattern": [
+		"IHI",
+		"IFI",
+		"IRI"
+	],
+	"result": {
+		"count": 1,
+		"id": "coffeecraft:roaster"
+	}
+}

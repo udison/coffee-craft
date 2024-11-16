@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:smelting",
+	"category": "food",
+	"cookingtime": 100,
+	"experience": 0.25,
+	"ingredient": {
+		"item": "coffeecraft:raw_coffee_bean"
+	},
+	"result": {
+		"id": "coffeecraft:coffee_bean"
+	}
+}
