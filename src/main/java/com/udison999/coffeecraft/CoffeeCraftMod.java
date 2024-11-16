@@ -1,7 +1,7 @@
 package com.udison999.coffeecraft;
 
+import com.udison999.coffeecraft.block.ModBlocks;
 import com.udison999.coffeecraft.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
@@ -40,6 +40,7 @@ public class CoffeeCraftMod
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -58,6 +59,11 @@ public class CoffeeCraftMod
     {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.COFFEE_BEAN);
+            event.accept(ModItems.RAW_COFFEE_BEAN);
+        }
+        
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.ROASTER);
         }
     }
 
