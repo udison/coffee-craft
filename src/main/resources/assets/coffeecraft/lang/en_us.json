@@ -1,0 +1,8 @@
+{
+  "itemGroup.coffeecraft": "Example Mod Tab",
+  
+  "block.coffeecraft.example_block": "Example Block",
+
+  "item.coffeecraft.coffee_bean": "Coffee Bean",
+  "item.coffeecraft.raw_coffee_bean": "Raw Coffee Bean"
+}
