@@ -1,6 +1,7 @@
 package com.udison999.coffeecraft;
 
 import com.udison999.coffeecraft.block.ModBlocks;
+import com.udison999.coffeecraft.item.ModCreativeModeTabs;
 import com.udison999.coffeecraft.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -39,6 +40,8 @@ public class CoffeeCraftMod
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -57,14 +60,6 @@ public class CoffeeCraftMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.COFFEE_BEAN);
-            event.accept(ModItems.RAW_COFFEE_BEAN);
-        }
-        
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.ROASTER);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
